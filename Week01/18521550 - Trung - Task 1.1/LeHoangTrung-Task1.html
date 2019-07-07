@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lê Hoàng Trung - Task 1</title>
+	<style type="text/css">
+	a:link
+	{
+		color: green;
+		text-decoration: none;
+		background-color: transparent;
+	}
+	a:hover
+	{
+		color: red;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	.styleQuestion
+	{
+		font-family: Tahoma, Times New Roman;
+		font: italic;
+	}
+	.styleAnswer
+	{
+		font-family: Tahoma, Times New Roman;
+	}
+	table, th, td
+	{
+		border: 2px solid green;
+		border-collapse: collapse;
+	}
+	body
+	{
+		background-image: url(image/task1.jpg);
+		background-repeat: no-repeat;
+		
+	}
+
+	</style>
+</head>
+<body>
+<ol type="a">
+	<li>
+		<h4 class="styleQuestion"><i>So sánh file HTML có định dạng .html và .htm. Nếu không có các thẻ &lt;html&gt;, &lt;head&gt; và &lt;body&gt; thì có ảnh hưởng gì trong file HTML không?</i></h4>
+
+		<p class="styleAnswer">
+			File có đuôi .html và .htm không có sự khác biệt, ngoài trừ đuôi .html được hỗ trợ nhiều hơn vì được áp dụng sau này. Chúng có thể thay thế và sử dụng thay cho nhau, trang web vẫn sẽ hiển thị cùng một nội dung. <br/>
+			Trong HTML5 thì việc mà thiếu các thẻ &lt;html&gt;, &lt;head&gt; và &lt;body&gt; không ảnh hưởng gì, trình duyệt vẫn hiển thị nội dung chính xác. Google Style Guide for HTML còn khuyến khích bỏ qua tất cả các thẻ tùy chọn, bao gồm cả &lt;html&gt;, &lt;head&gt; và &lt;body&gt; <br/>
+		</p>
+	</li>
+	<li>
+		<h4 class="styleQuestion"><i>Có những cách nào để hiển thị các thẻ HTML ra bên ngoài mà không bị HTML xử lý. Ví dụ hiển thị các nội dung như &lt;/br&gt;&lt;div&gt;&lt;h1&gt;Hello HTML&lt;/h1&gt;&lt;/div&gt;</i></h4>
+
+		<p class="styleAnswer">Để hiển thị thẻ html trên trình duyệt mà không bị HTML xử lý thì ta thay thế ký tự "<" và "> tương ứng thành "&amp;lt;" và "&amp;gt;".<br/>Ví dụ: &amp;lt;html&ampgt; thay thế cho &lt;html&gt;
+		</p>
+	</li>
+	<li>
+		<h4 class="styleQuestion"><i>Làm thế nào để tạo vùng chọn để định dạng trong CSS cho một tag, một class, một ID?</i></h4>
+
+		<p class="styleAnswer">Để tạo vùng chọn cho một thẻ thì ta chỉ cần tên thẻ và các thuộc tính muốn có.<br/>Ví dụ: h1 { color: red; }<br/>
+		Tạo vùng chọn dựa vào ID thì phải có dấu thăng trước tên ID.<br/>Ví dụ: #header { color: blue; }<br/>
+		Tạo vùng chọn dựa vào ID thì phải có dấu chấm trước tên class.<br/>Ví dụ: .negative { color: green; }
+		</p>
+	</li>
+	<li>
+		<h4 class="styleQuestion"><i>Tìm và cho ví dụ về các thẻ có các chức năng sau: <br/>
+		+ Gạch chân, kẻ đường ngang, chỉ số trên/dưới.<br/>
+		+ Tạo bảng (có ghép dòng, ghép cột).<br/>
+		+ 4 hiệu ứng chữ chạy từ 4 hướng(<i>trái, phải, trên, dưới</i>).</i></h4>
+
+		<p class="styleAnswer">
+			+ Gạch chân: &lt;u&gt;, &lt;ins&gt; <br/> 
+			Ví dụ: <u>Gạch chân</u> <br/>
+			+ Kẻ đường  ngang: &lt;del&gt;, &lt;strike&gt; <br/>
+			Ví dụ: <strike>Kẻ đường gạch ngang</strike> <br/>
+			+ Chỉ số trên/dưới:  &lt;sup&gt;/&lt;sub&gt; <br/>
+			Ví dụ: Chỉ số <sup>trên</sup>, chỉ số <sub>dưới</sub> <br/>
+			+ Tạo bảng:  &lt;table&gt; <br/>
+			Ví dụ:
+			 <table style="width: 20%">
+				<tr>
+					<th style="text-align: center;">Name</th>
+					<th style="text-align: center;">Age</th>
+				</tr>
+				<tr>
+					<td>Lê Hoàng Trung</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>Đào Thị Thu Hà</td>
+					<td>26</td>
+				</tr>
+			</table>
+			<br/>
+			+ Hiệu ứng chữ chạy: &lt;marquee&gt; <br/>
+			Ví dụ:
+			<marquee width=50% direction="down"> Hiệu ứng chữ chạy </marquee> <br/>
+			<!-- Code: <code> &lt;marquee width=50% direction="down"&gt; Hiệu ứng chữ chạy &lt;/marquee&gt; </code> -->
+		</p>
+
+	</li>
+</ol>
+</body>
+</html>

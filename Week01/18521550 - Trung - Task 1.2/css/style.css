@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.625;
+	font-size: 16px;
+	color: #263238; 
+	font-family: 'Roboto Slab', serif;
+	-webkit-font-smoothing: antialiased;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+img {
+	vertical-align: middle;
+	max-width: 100%;
+}
+p {
+	margin: 0 0 10px;
+}
+
+/*layout*/
+.Page
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1170px;
+}
+.sidebar
+{
+	float: left;
+	width: 35%;
+	background:#3280bd;
+	color: #fff; 
+}
+
+.content
+{
+	float: right;
+	width: 65%;
+	padding: 70px;
+}
+
+/* avatar */
+.avatar {
+	text-align: center;
+	padding: 40px 0;
+	background: #28699a;
+}
+.avatar img {
+	border-radius: 50%;
+	border: 5px solid rgba(0, 0, 0, .1);
+}
+
+.avatar h1
+{
+	font-size: 32px;
+	text-transform: uppercase;
+	margin: 25px 0 0;
+}
+
+/* module */
+.sidebar .module 
+{
+	padding: 0 45px;
+	margin-top: 50px;
+}
+
+.sidebar .module:last-child
+{
+	margin-bottom: 50px;
+}
+.module_title
+{
+	font-size: 22px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.module_work
+{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+/* Class hỗ trợ */
+.flex
+{
+	display: flex;
+}
+.flex
+{
+	align-items: center;
+}
+
+.flex .flex--1
+{
+	flex: 0.99;
+}
+
+.marginn
+{
+	margin-left: 20px;
+}
+/*Progress bar*/
+.progress_bar,
+.progress_bar span
+{
+	height: 10px;
+	background: #fff;
+	display: block;
+}
+
+.progress_bar span
+{
+	background: #28699a;
+}
+
+.module--progress li
+{
+	margin-bottom: 20px;
+}
+
+.module_title
+{
+	margin-bottom: 4px;
+}
+
+/*section*/
+.section_title
+{
+	text-transform: uppercase;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+.section_content 
+{
+	padding-left: 0px;
+	margin-bottom: 40px;
+}
+
+.section
+{
+	margin-bottom: 40px;
+}
+.date
+{
+	float: right;
+}
+
+.circle
+{
+	color: #fff;
+	background: #28699a;
+	border-radius: 50%;
+	
+	text-align: center;
+	
+}
+
+.circle-small
+{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.circle-medium
+{
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+}
