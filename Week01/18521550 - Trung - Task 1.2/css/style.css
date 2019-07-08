@@ -20,13 +20,15 @@ p {
 .Page
 {
 	margin: auto;
+
 	width: 100%;
 	max-width: 1170px;
 }
 .sidebar
 { 
 	float: left;
-    width: 340px;
+    width: 30%;
+
 	background:#3280bd;
 	color: #fff; 
 }
@@ -34,8 +36,9 @@ p {
 .content
 {
 	float: right;
-	width: 58%;
-	padding: 70px;
+	width: 65%;
+	margin-left: 5%;
+	margin-top: 30px;
 }
 
 /* avatar */
@@ -47,6 +50,8 @@ p {
 .avatar img {
 	border-radius: 50%;
 	border: 5px solid rgba(0, 0, 0, .1);
+	width: 70%;
+	height: 70%;
 }
 
 .avatar h1
