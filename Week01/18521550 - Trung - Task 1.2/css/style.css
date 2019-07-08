@@ -1,38 +1,17 @@
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+body, h1, h2, h3, img, ul
+{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
 }
+
 body {
 	line-height: 1.625;
 	font-size: 16px;
-	color: #263238;
 	font-family: 'Roboto Slab', serif;
-	-webkit-font-smoothing: antialiased;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-*, *:before, *:after {
-	box-sizing: border-box;
-}
-img {
-	vertical-align: middle;
-	max-width: 100%;
-}
+
 p {
 	margin: 0 0 10px;
 }
@@ -45,9 +24,9 @@ p {
 	max-width: 1170px;
 }
 .sidebar
-{
+{ 
 	float: left;
-	width: 35%;
+    width: 340px;
 	background:#3280bd;
 	color: #fff; 
 }
@@ -55,7 +34,7 @@ p {
 .content
 {
 	float: right;
-	width: 65%;
+	width: 58%;
 	padding: 70px;
 }
 
@@ -82,9 +61,10 @@ p {
 {
 	padding: 0 45px;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.sidebar .module:last-child
+ .module:last-child
 {
 	margin-bottom: 50px;
 }
@@ -104,27 +84,18 @@ p {
 
 
 /* Class hỗ trợ */
-.flex
+.flex--1
 {
-	display: flex;
-}
-.flex
-{
-	align-items: center;
+	flex: 1;
 }
 
-.flex .flex--1
-{
-	flex: 0.99;
-}
-
-.marginn
+.margin-left
 {
 	margin-left: 20px;
 }
+
 /*Progress bar*/
-.progress_bar,
-.progress_bar span
+.progress_bar
 {
 	height: 10px;
 	background: #fff;
@@ -133,6 +104,8 @@ p {
 
 .progress_bar span
 {
+	height: 10px;
+	display: block;
 	background: #28699a;
 }
 
@@ -141,10 +114,6 @@ p {
 	margin-bottom: 20px;
 }
 
-.module_title
-{
-	margin-bottom: 4px;
-}
 
 /*section*/
 .section_title
@@ -173,7 +142,6 @@ p {
 	color: #fff;
 	background: #28699a;
 	border-radius: 50%;
-	
 	text-align: center;
 	
 }
