@@ -1,0 +1,88 @@
+.background-left {
+    padding-top: 70px;
+    height: 650px;
+    float: right;
+    margin: 10px;
+}
+
+body {
+    background-color: #fafafa !important;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    max-width: 350px;
+    max-height: 561px;
+    margin: 10px;
+    padding: 40px;
+    border: 1px solid #e6e6e6;
+}
+
+.header {
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 17px;
+    color: #999;
+}
+
+.btn {
+    font-weight: 600 !important;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    background-color: #3897f0;
+    margin: 12px auto;
+    padding: 2px !important;
+}
+
+.icon {
+    padding: 0 8px 2px;
+}
+
+.divide-form {
+    font-size: 13px !important;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 14px 0px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.form-control {
+    background: #fafafa !important;
+    border: 1px solid #e6e6e6;
+    font-size: 12px !important;
+}
+
+::placeholder {
+    color: #999 !important;
+}
+
+.condition {
+    color: #999;
+    font-size: 14px;
+    margin: 5px 20px;
+    line-height: 18px;
+}
+
+.login {
+    font-size: 14px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6 !important;
+    max-width: 348px;
+    margin: 10px;
+    padding: 20px 0 10px 0;
+}
+
+.login a:hover {
+    text-decoration: none;
+}
+
+.get-app {
+    font-size: 14px;
+    color: #262626;
+    line-height: 18px;
+}
+
+.download {
+    margin: 10px;
+}
