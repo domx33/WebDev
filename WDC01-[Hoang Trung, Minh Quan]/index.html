@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+
+    <!-- load font awesome icon-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- load bootstrap css-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- load css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="">
+    <div class="container">
+        <div class="row">
+            <h1>Memory Game</h1>
+            <p id="demo" style="color: black"></p>
+        </div>
+        <div class="row text-center">
+            <button type="button" onclick="letPlay(); getTimePlay()" id="start" class="btn-play"><i class="fa fa-play-circle"></i>Play</button>
+        </div>
+
+        <div class="row text-center">
+            <div class="container">
+                <span id="time-play"></span>
+                <div class="progress myprogress" style="display: none;" id="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="myprogressbar" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container center">
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(0)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(1)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(2)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(3)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(4)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(5)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(6)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(7)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(8)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(9)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(10)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(11)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(12)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(13)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(14)" src="img/disable.jpg"></div>
+            <div class="grid-item"><img id="id1" onclick="CheckStatus(15)" src="img/disable.jpg"></div>
+        </div>
+        <!--Cửa sổ pop up-->
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2 id="title-popup"></h2>
+                <a class="close" href=#>×</a>
+            </div>
+            <div class="content-2">
+                <!--<p>You made <span id=finalMove> </span> moves </p>-->
+                <p>Time play: <span id=totalTime> </span> </p>
+                <!-- <p>Rating: <span id=starRating></span></p> -->
+            </div>
+            <button id="play-again" onclick="playAgain()">
+                    Play again 😄</a>
+                </button>
+        </div>
+    </div>
+
+    </div>
+    <script>
+    </script>
+    <!-- load js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
