@@ -1,5 +1,5 @@
 body {
-    /*color: #fafafa !important;*/
+    /* color: #fafafa !important;*/
     font-family: 'Amatic SC', cursive !important;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    margin: 59px auto;
+    margin: 65px auto;
     color: #000;
 }
 
@@ -40,94 +40,93 @@ h1 {
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
+    /*  border: 1px solid #cecece;*/
     border: 2px 4px 13px 0 rgba(46, 61, 73, 0.5);
-    font-size: 30px;
     height: 140px;
     width: 140px;
     border-radius: 4px;
-    /* background: url('../img/disable.jpg');
-    background-size: cover; */
+    /*background: url('../img/disable.jpg');*/
+    background-size: cover;
 }
 
 .myprogress {
     width: 680px;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: -130px;
-}
-
-#time-play {
-    font-size: 24px;
-    line-height: 18px;
+    margin-bottom: -160px;
 }
 
 
 /*Cửa sổ pop up*/
 
-.overlay {
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
     position: fixed;
-    top: 0;
-    bottom: 0;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
     left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 5px;
-    width: 85%;
-    position: relative;
-    transition: all 5s ease-in-out;
-    font-family: 'Gloria Hallelujah', cursive;
-}
-
-.popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-}
-
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-
-.popup .close:hover {
-    color: #E5F720;
-}
-
-.popup .content-1,
-.content-2 {
-    max-height: 30%;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
     overflow: auto;
-    text-align: center;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
-.show {
-    visibility: visible !important;
-    opacity: 100 !important;
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
 }
 
-#starRating li {
-    display: inline-block;
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*Thời gian chơi, số lượt di chuyển*/
+
+#time-play,
+#moves,
+#myScore {
+    margin-right: 50px;
+    margin-top: -60px;
+    padding: 10px auto;
+    margin: auto 10px;
+}
+
+
+/* Nút chơi lại */
 
 #play-again {
     background-color: #141214;
